@@ -11,7 +11,19 @@
           <p class="text-lg pr-2">{{ count }}</p>秒
         </div>
 
-        <h2 class="text-5xl font-bold mb-4 p-3 text-center bg-gray-300" :class="` text-${currentWord.color} text-${currentWord.color}-400`">{{ currentWord.word }}</h2>
+        <h2 
+          :class="{
+            'text-red-500': currentWord.color === 'red',
+            'text-blue-500': currentWord.color === 'blue',
+            'text-green-500': currentWord.color === 'green',
+            'text-yellow-500': currentWord.color === 'yellow',
+            'text-black': currentWord.color === 'black',
+            'text-white': currentWord.color === 'white',
+          }"
+          class="text-5xl font-bold mb-4 p-3 text-center bg-gray-300" 
+        >
+          {{ currentWord.word }}
+        </h2>
         <input v-model="userInput" @keydown.enter="check" class="px-3 py-2 border-gray-300 border rounded-lg mb-4 w-full"> 
       </div>
       <div v-if="!isStarted && startCount >= 0" class="text-3xl text-center mb-8">
