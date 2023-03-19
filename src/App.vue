@@ -2,8 +2,8 @@
 </script>
 
 <template>
-  <div class="text-red-400">
-    Hello World!
+  <div>
+    <router-view></router-view>
   </div>
 </template>
 
