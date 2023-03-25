@@ -1,0 +1,545 @@
+[
+  {
+    "answer": "aka",
+    "word": "赤",
+    "color": "red"
+  },
+  {
+    "answer": "aka",
+    "word": "赤",
+    "color": "blue"
+  },
+  {
+    "answer": "aka",
+    "word": "赤",
+    "color": "green"
+  },
+  {
+    "answer": "aka",
+    "word": "赤",
+    "color": "yellow"
+  },
+  {
+    "answer": "aka",
+    "word": "赤",
+    "color": "black"
+  },
+  {
+    "answer": "aka",
+    "word": "赤",
+    "color": "white"
+  },
+  {
+    "answer": "ao",
+    "word": "青",
+    "color": "red"
+  },
+  {
+    "answer": "ao",
+    "word": "青",
+    "color": "blue"
+  },
+  {
+    "answer": "ao",
+    "word": "青",
+    "color": "green"
+  },
+  {
+    "answer": "ao",
+    "word": "青",
+    "color": "yellow"
+  },
+  {
+    "answer": "ao",
+    "word": "青",
+    "color": "black"
+  },
+  {
+    "answer": "ao",
+    "word": "青",
+    "color": "white"
+  },
+  {
+    "answer": "midori",
+    "word": "緑",
+    "color": "red"
+  },
+  {
+    "answer": "midori",
+    "word": "緑",
+    "color": "blue"
+  },
+  {
+    "answer": "midori",
+    "word": "緑",
+    "color": "green"
+  },
+  {
+    "answer": "midori",
+    "word": "緑",
+    "color": "yellow"
+  },
+  {
+    "answer": "midori",
+    "word": "緑",
+    "color": "black"
+  },
+  {
+    "answer": "midori",
+    "word": "緑",
+    "color": "white"
+  },
+  {
+    "answer": "ki",
+    "word": "黄",
+    "color": "red"
+  },
+  {
+    "answer": "ki",
+    "word": "黄",
+    "color": "blue"
+  },
+  {
+    "answer": "ki",
+    "word": "黄",
+    "color": "green"
+  },
+  {
+    "answer": "ki",
+    "word": "黄",
+    "color": "yellow"
+  },
+  {
+    "answer": "ki",
+    "word": "黄",
+    "color": "black"
+  },
+  {
+    "answer": "ki",
+    "word": "黄",
+    "color": "white"
+  },
+  {
+    "answer": "kuro",
+    "word": "黒",
+    "color": "red"
+  },
+  {
+    "answer": "kuro",
+    "word": "黒",
+    "color": "blue"
+  },
+  {
+    "answer": "kuro",
+    "word": "黒",
+    "color": "green"
+  },
+  {
+    "answer": "kuro",
+    "word": "黒",
+    "color": "yellow"
+  },
+  {
+    "answer": "kuro",
+    "word": "黒",
+    "color": "black"
+  },
+  {
+    "answer": "kuro",
+    "word": "黒",
+    "color": "white"
+  },
+  {
+    "answer": "siro",
+    "word": "白",
+    "color": "red"
+  },
+  {
+    "answer": "siro",
+    "word": "白",
+    "color": "blue"
+  },
+  {
+    "answer": "siro",
+    "word": "白",
+    "color": "green"
+  },
+  {
+    "answer": "siro",
+    "word": "白",
+    "color": "yellow"
+  },
+  {
+    "answer": "siro",
+    "word": "白",
+    "color": "black"
+  },
+  {
+    "answer": "siro",
+    "word": "白",
+    "color": "white"
+  },
+
+
+  {
+    "answer": "aka",
+    "word": "あか",
+    "color": "red"
+  },
+  {
+    "answer": "aka",
+    "word": "あか",
+    "color": "blue"
+  },
+  {
+    "answer": "aka",
+    "word": "あか",
+    "color": "green"
+  },
+  {
+    "answer": "aka",
+    "word": "あか",
+    "color": "yellow"
+  },
+  {
+    "answer": "aka",
+    "word": "あか",
+    "color": "black"
+  },
+  {
+    "answer": "aka",
+    "word": "あか",
+    "color": "white"
+  },
+  {
+    "answer": "ao",
+    "word": "あお",
+    "color": "red"
+  },
+  {
+    "answer": "ao",
+    "word": "あお",
+    "color": "blue"
+  },
+  {
+    "answer": "ao",
+    "word": "あお",
+    "color": "green"
+  },
+  {
+    "answer": "ao",
+    "word": "あお",
+    "color": "yellow"
+  },
+  {
+    "answer": "ao",
+    "word": "あお",
+    "color": "black"
+  },
+  {
+    "answer": "ao",
+    "word": "あお",
+    "color": "white"
+  },
+  {
+    "answer": "midori",
+    "word": "みどり",
+    "color": "red"
+  },
+  {
+    "answer": "midori",
+    "word": "みどり",
+    "color": "blue"
+  },
+  {
+    "answer": "midori",
+    "word": "みどり",
+    "color": "green"
+  },
+  {
+    "answer": "midori",
+    "word": "みどり",
+    "color": "yellow"
+  },
+  {
+    "answer": "midori",
+    "word": "みどり",
+    "color": "black"
+  },
+  {
+    "answer": "midori",
+    "word": "みどり",
+    "color": "white"
+  },
+  {
+    "answer": "ki",
+    "word": "き",
+    "color": "red"
+  },
+  {
+    "answer": "ki",
+    "word": "き",
+    "color": "blue"
+  },
+  {
+    "answer": "ki",
+    "word": "き",
+    "color": "green"
+  },
+  {
+    "answer": "ki",
+    "word": "き",
+    "color": "yellow"
+  },
+  {
+    "answer": "ki",
+    "word": "き",
+    "color": "black"
+  },
+  {
+    "answer": "ki",
+    "word": "き",
+    "color": "white"
+  },
+  {
+    "answer": "kuro",
+    "word": "くろ",
+    "color": "red"
+  },
+  {
+    "answer": "kuro",
+    "word": "くろ",
+    "color": "blue"
+  },
+  {
+    "answer": "kuro",
+    "word": "くろ",
+    "color": "green"
+  },
+  {
+    "answer": "kuro",
+    "word": "くろ",
+    "color": "yellow"
+  },
+  {
+    "answer": "kuro",
+    "word": "くろ",
+    "color": "black"
+  },
+  {
+    "answer": "kuro",
+    "word": "くろ",
+    "color": "white"
+  },
+  {
+    "answer": "siro",
+    "word": "しろ",
+    "color": "red"
+  },
+  {
+    "answer": "siro",
+    "word": "しろ",
+    "color": "blue"
+  },
+  {
+    "answer": "siro",
+    "word": "しろ",
+    "color": "green"
+  },
+  {
+    "answer": "siro",
+    "word": "しろ",
+    "color": "yellow"
+  },
+  {
+    "answer": "siro",
+    "word": "しろ",
+    "color": "black"
+  },
+  {
+    "answer": "siro",
+    "word": "しろ",
+    "color": "white"
+  },
+
+  {
+    "answer": "aka",
+    "word": "アカ",
+    "color": "red"
+  },
+  {
+    "answer": "aka",
+    "word": "アカ",
+    "color": "blue"
+  },
+  {
+    "answer": "aka",
+    "word": "アカ",
+    "color": "green"
+  },
+  {
+    "answer": "aka",
+    "word": "アカ",
+    "color": "yellow"
+  },
+  {
+    "answer": "aka",
+    "word": "アカ",
+    "color": "black"
+  },
+  {
+    "answer": "aka",
+    "word": "アカ",
+    "color": "white"
+  },
+  {
+    "answer": "ao",
+    "word": "アオ",
+    "color": "red"
+  },
+  {
+    "answer": "ao",
+    "word": "アオ",
+    "color": "blue"
+  },
+  {
+    "answer": "ao",
+    "word": "アオ",
+    "color": "green"
+  },
+  {
+    "answer": "ao",
+    "word": "アオ",
+    "color": "yellow"
+  },
+  {
+    "answer": "ao",
+    "word": "アオ",
+    "color": "black"
+  },
+  {
+    "answer": "ao",
+    "word": "アオ",
+    "color": "white"
+  },
+  {
+    "answer": "midori",
+    "word": "ミドリ",
+    "color": "red"
+  },
+  {
+    "answer": "midori",
+    "word": "ミドリ",
+    "color": "blue"
+  },
+  {
+    "answer": "midori",
+    "word": "ミドリ",
+    "color": "green"
+  },
+  {
+    "answer": "midori",
+    "word": "ミドリ",
+    "color": "yellow"
+  },
+  {
+    "answer": "midori",
+    "word": "ミドリ",
+    "color": "black"
+  },
+  {
+    "answer": "midori",
+    "word": "ミドリ",
+    "color": "white"
+  },
+  {
+    "answer": "ki",
+    "word": "キ",
+    "color": "red"
+  },
+  {
+    "answer": "ki",
+    "word": "キ",
+    "color": "blue"
+  },
+  {
+    "answer": "ki",
+    "word": "キ",
+    "color": "green"
+  },
+  {
+    "answer": "ki",
+    "word": "キ",
+    "color": "yellow"
+  },
+  {
+    "answer": "ki",
+    "word": "キ",
+    "color": "black"
+  },
+  {
+    "answer": "ki",
+    "word": "キ",
+    "color": "white"
+  },
+  {
+    "answer": "kuro",
+    "word": "クロ",
+    "color": "red"
+  },
+  {
+    "answer": "kuro",
+    "word": "クロ",
+    "color": "blue"
+  },
+  {
+    "answer": "kuro",
+    "word": "クロ",
+    "color": "green"
+  },
+  {
+    "answer": "kuro",
+    "word": "クロ",
+    "color": "yellow"
+  },
+  {
+    "answer": "kuro",
+    "word": "クロ",
+    "color": "black"
+  },
+  {
+    "answer": "kuro",
+    "word": "クロ",
+    "color": "white"
+  },
+  {
+    "answer": "siro",
+    "word": "シロ",
+    "color": "red"
+  },
+  {
+    "answer": "siro",
+    "word": "シロ",
+    "color": "blue"
+  },
+  {
+    "answer": "siro",
+    "word": "シロ",
+    "color": "green"
+  },
+  {
+    "answer": "siro",
+    "word": "シロ",
+    "color": "yellow"
+  },
+  {
+    "answer": "siro",
+    "word": "シロ",
+    "color": "black"
+  },
+  {
+    "answer": "siro",
+    "word": "シロ",
+    "color": "white"
+  }
+]
