@@ -28,17 +28,20 @@
     </div>
 
     <div v-if="isStarted || startCount >= 0" class="mb-4">
-      <div v-if="isCorrect !== null" class="fixed">
-        <p v-if="isCorrect" class="text-green-500 text-3xl">〇</p>
-        <p v-else class="text-red-500 text-3xl">×</p>
+      <div class="relative">
+        <div v-if="isCorrect !== null" class="absolute mx-1">
+          <p v-if="isCorrect" class="text-green-500 text-3xl">〇</p>
+          <p v-else class="text-red-500 text-3xl">×</p>
+        </div>
+        
+        <input 
+          v-model="userInput" 
+          @keydown.enter="checkAnswer" 
+          class="px-8 py-2 border-gray-500 border rounded-lg w-full focus:outline-none"
+          placeholder="入力してください"
+        />   
       </div>
       
-      <input 
-        v-model="userInput" 
-        @keydown.enter="checkAnswer" 
-        class="px-8 py-2 border-gray-500 border rounded-lg w-full focus:outline-none"
-        placeholder="入力してください"
-      />
       <p class="mx-2 text-sm text-gray-600">入力後Enterキーを押してください。</p>
     </div>
     <div class="text-center">
