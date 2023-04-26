@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vue/cli-plugin-typescript": "^5.0.8",
+    "typescript": "^5.0.4",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6"
   },

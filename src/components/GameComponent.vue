@@ -5,10 +5,11 @@
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
           <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
-        <p class="text-lg pr-2">{{ count }}</p>秒
+        <p class="text-lg pr-2">{{ timeLimit }}</p>秒
       </div>
 
       <h2 
+        v-if="currentQuestion"
         :class="{
           'text-red-500': currentQuestion.color === 'red',
           'text-blue-500': currentQuestion.color === 'blue',
@@ -42,7 +43,9 @@
         />   
       </div>
       
-      <p class="mx-2 text-sm text-gray-600">入力後Enterキーを押してください。</p>
+      <p class="mx-2 text-sm text-gray-600">
+        入力後Enterキーを押してください。 spaceキーで入力中の文字をリセットできます。
+      </p>
     </div>
     <div class="text-center">
       <button v-if="!isStarted && startCount < 0" @click="startGame" class="px-4 py-2 w-full bg-blue-600 text-white rounded-lg font-bold hover:bg-blue-700">脳トレを開始</button>
@@ -51,21 +54,31 @@
   </div>
 </template>
 
-<script setup>
-import { onMounted, ref } from 'vue'
+<script setup lang="ts">
+import { defineComponent, onMounted, ref } from 'vue'
+
+
+interface Question {
+  word: string;
+  answer: string;
+  color: string;
+}
 
 const props = defineProps({
-  questions: Array
+  questions: {
+    type: Array as () => Question[],
+    default: () => [],
+  }
 })
 
-const shuffledQuestions = ref(props.questions);
-const currentQuestion = ref('')
+const shuffledQuestions = ref<Question[]>(props.questions)
+const currentQuestion = ref<Question | null>(null)
 const userInput = ref('')
 const isStarted = ref(false)
 const startCount = ref(-1)
-const count = ref(3); // 一文の制限時間
-const isCorrect = ref(null); // 問題に正解したかどうか
-let intervalId
+const timeLimit = ref(3); // 一文の制限時間
+const isCorrect = ref<boolean | null>(null); // 問題に正解したかどうか
+let intervalId: number
 let currentIndex = 0
 
 onMounted(() => {
@@ -78,7 +91,7 @@ onMounted(() => {
 })
 
 // 問題をシャッフルする
-const shuffle = () => {
+const shuffleQuestions = () => {
   for (let i = props.questions.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1))
     const tmp = shuffledQuestions.value[i]
@@ -93,15 +106,17 @@ const startGame = () => {
   if(!confirm('ゲームを開始しますか？')) return;
 
   startCount.value = 3;
-  const timerId = setInterval(() => { // 開始前の3秒のカウントダウン
+  const timerId = setInterval(() => {
+    // 開始前の3秒のカウントダウン
     startCount.value--
     if(startCount.value < 0) {
       clearInterval(timerId)
-      shuffle()
+      shuffleQuestions()
       isStarted.value = true
-      intervalId = setInterval(() => { // 3秒ごとに別の問題を出す
-        count.value--;
-        if(count.value < 0) {
+      intervalId = window.setInterval(() => {
+        // timeLimit秒ごとに別の問題を出す
+        timeLimit.value--;
+        if(timeLimit.value < 0) {
           changeQuestion()
         }
       }, 1000)
@@ -119,14 +134,14 @@ const endGame = () => {
 }
 
 const changeQuestion = () => {
-  count.value = 3
+  timeLimit.value = 3
   userInput.value = ''
   currentIndex = (currentIndex + 1) % props.questions.length
   currentQuestion.value = shuffledQuestions.value[currentIndex]
 }
 
 const checkAnswer = () => {
-  if(!isStarted.value) return;
+  if(!isStarted.value || !currentQuestion.value) return;
 
   if (userInput.value === currentQuestion.value.answer) {
     isCorrect.value = true;

@@ -43,7 +43,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import questions from '../data/questions2.json'
 import GameComponent from '../components/GameComponent.vue';
 </script>
