@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-7xl mx-auto bg-gray-200 min-h-screen flex items-center flex-col">
+  <div class="max-w-7xl mx-auto min-h-screen flex items-center flex-col">
     <div class="my-3 pb-8 w-full border-b border-gray-400">
       <router-link to="/" class="m-3 text-gray-600 underline hover:text-gray-800">←戻る</router-link>
       <h1 class="text-center text-xl font-bold mb-2">文字名を答える脳トレ</h1>

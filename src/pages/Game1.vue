@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-7xl mx-auto bg-gray-200 min-h-screen flex items-center flex-col">
+  <div class="max-w-7xl mx-auto min-h-screen flex items-center flex-col">
     <div class="my-3 pb-8 w-full border-b border-gray-400">
       <router-link to="/" class="m-3 text-gray-600 underline hover:text-gray-800">←戻る</router-link>
       <h1 class="text-center text-2xl font-bold mb-2">色名を答える脳トレ</h1>
@@ -10,9 +10,9 @@
     
     <GameComponent :questions="questions" />
 
-    <div class="mt-8 mx-auto flex justify-center flex-col items-center max-w-xl">
+    <div class="mt-8 mx-auto flex justify-center flex-col items-center max-w-xl px-3">
       <h3 class="text-lg mb-3 underline w-full text-start ">答え方: </h3>
-      <div class="flex flex-wrap items-center space-x-2 ">
+      <div class="flex flex-wrap space-x-2">
         <div class="flex items-center space-x-3 p-1 shadow-lg border border-gray-400 rounded">
           <div class="bg-red-500 w-5 h-5 mr-3"></div> : 
           <p class="">aka</p>
